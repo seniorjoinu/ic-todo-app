@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "src/todo_app_backend",
+]
