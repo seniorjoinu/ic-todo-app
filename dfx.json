@@ -10,13 +10,15 @@
         "todo_app_backend"
       ],
       "frontend": {
-        "entrypoint": "src/todo_app_frontend/src/index.html"
+        "entrypoint": "src/todo_app_frontend/public/index.html"
       },
       "source": [
-        "src/todo_app_frontend/assets",
-        "dist/todo_app_frontend/"
+        "src/todo_app_frontend/build"
       ],
-      "type": "assets"
+      "type": "assets",
+      "build": [
+        "npm --prefix src/todo_app_frontend run build"
+      ]
     }
   },
   "defaults": {

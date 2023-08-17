@@ -1,3 +1,21 @@
+type Index = nat64;
+type Element = record {
+    title : text;
+    status : Status;
+};
+type Status = variant {
+    Todo;
+    Done;
+};
+type Result = variant {
+    Ok;
+    IndexOutOfBounds;
+};
+
 service : {
-    "greet": (text) -> (text) query;
-}
+    "add_element_at" : (Index, Element) -> (Result);
+    "remove_element_at" : (Index) -> (Result);
+    "update_element_at" : (Index, Element) -> (Result);
+
+    "list_all" : () -> (vec Element) query;
+};

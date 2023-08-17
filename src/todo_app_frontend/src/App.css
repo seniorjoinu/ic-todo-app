@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  font-family: 'Roboto', 'Helvetica', sans-serif, !important;
+}
+
+.App > h2 {
+  font-size: 44px;
+  text-align: center;
+}
+
+.App > .CreateElementInput {
+  position: relative;
+  width: 600px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.CreateElementInput > input {
+  width: 100%;
+  font-size: 24px;
+}
+
+.CreateElementInput > button {
+  border: none;
+  background-color: #29ABE2;
+  color: white;
+  font-size: 24px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+.elements {
+  width: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  position: relative;
+}
+
+.Element {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Element > span:hover {
+  cursor: text;
+}
+
+.Element > .text {
+  width: 100%;
+  margin: 0 5px;
+  font-size: 24px;
+
+  text-align: left;
+  padding: 0 10px;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.Element > button {
+  border: none;
+  background-color: #ED1E79;
+  color: white;
+  font-size: 24px;
+  padding: 5px 13px;
+  margin-left: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+input:disabled {
+  background-color: gray;
+}
